@@ -592,7 +592,7 @@ label {
 }
 
 .main-menu ul li a::after {
-    content: "+";
+    content: "";
     margin-left: 10px;
     color: #3660d9;
 }
@@ -728,7 +728,7 @@ label {
 }
 
 .menu-search a {
-    font-size: 16px;
+    font-size: 15px;
     display: inline-block;
     margin-top: 5px;
     background: #ffffff4a;
@@ -1246,7 +1246,7 @@ label {
     padding-right: 15px;
     padding-left: 10px;
     color: #ddd;
-    content: "|";
+    content: ">";
 }
 
 .breadcrumb-title h2 {
@@ -6715,7 +6715,7 @@ section:hover .section-title h2::before {
     min-width: 250px;
     z-index: 1;
     transition: all 0.3s ease-in-out;
-    margin-top: 15px;
+    margin-top: 10px;
     border-top: 4px solid #3660d9;
     box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
@@ -6723,7 +6723,11 @@ section:hover .section-title h2::before {
 }
 
 .main-menu .has-sub li a {
-    padding: 15px;
+    padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	font-size: 13px;
 }
 
 .main-menu .has-sub li {
@@ -9048,11 +9052,7 @@ p.checkout-coupon input[type="text"] {
 .services-categories li:hover:before {
     opacity: 1;
     visibility: visible;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
+    
 }
 
 .services-categories li a {
@@ -9064,11 +9064,7 @@ p.checkout-coupon input[type="text"] {
     display: block;
     padding-left: 38px;
     overflow: hidden;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
+    
 }
 
 .services-categories li.active a,

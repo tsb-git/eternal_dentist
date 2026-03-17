@@ -22,9 +22,119 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Base */
+.btn-floating:hover img {
+  margin-bottom: -3px
+}
+
+.btn-floating {
+    position: fixed;
+    left: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+
+.btn-floating1 {
+    position: fixed;
+    right: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+
+.btn-floating:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.btn-floating1:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn-floating span {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+
+.btn-floating:hover span {
+    display: inline-block;
+}
+.btn-floating1 span {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+
+.btn-floating1:hover span {
+    display: inline-block;
+}
+
+
+/* Phone */
+.btn-floating.phone {
+    bottom: 25px;
+    background-color: #760f10;
+}
+
+.btn-floating.phone:hover {
+    background-color: #c03421;
+}
+
+/* WhatsApp */
+.btn-floating1.whatsapp {
+    background-color: #34af23;
+    bottom: 25px;
+}
+
+.btn-floating1.whatsapp:hover {
+    background-color: #1f7a12
+}
+</style>
+</head>
+<body>
+<a href="tel:+918697374363">
+  <button class="btn-floating phone">
+    <img src="https://i.imgur.com/FZuns9L.png" alt="Phone">
+    <span>+91 86973 - 74363</span>
+  </button>
+</a>
+
+<a href="https://wa.me/+918697374363" target="_blank">
+  <button class="btn-floating1 whatsapp">
+    <img src="https://i.imgur.com/LBW2Lso.png" alt="WhatsApp">
+    <span>+91 86973 - 74363</span>
+  </button>
+</a>
+</body>
+</html>
+
     <!-- header -->
     <header class="header-area header">
         <div class="header-top second-header d-none d-md-block">
@@ -34,23 +144,21 @@
                         <div class="header-cta">
                             <ul>
                                 <li>
-                                    <i class="icon fal fa-envelope"></i>
+                                    <img src="img/icon/env.png"  >
                                     <span>info@example.com</span>
                                 </li>
                                 <li>
-                                    <i class="icon fal fa-phone"></i>
-                                    <span>+91-7052-101-786</span>
+                                    <img src="img/icon/phone.png"  >
+                                    <span>+91 86973 - 74363</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 d-none d-lg-block text-right">
                         <div class="header-social">
-                            <span>
-                                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" title="LinkedIn"><i class="fab fa-instagram"></i></a>               
-                                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" title="Twitter"><i class="fab fa-youtube"></i></a>
+                             <span>
+                                    <img src="img/icon/clock.png" ><b>Monday - Saturday : 9:00am - 10:00pm</b>
+                                    
                                    </span>
                             <!--  /social media icon redux -->
                         </div>
@@ -74,50 +182,30 @@
                             <div class="main-menu text-right text-xl-right">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li class="has-sub">
-                                            <a href="index.html">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home Page 01</a></li>
-                                                <li><a href="index-2.html">Home Page 02</a></li>
-                                                <li><a href="index-3.html">Home Page 03</a></li>
-                                            </ul>
-                                        </li>
+										<li><a href="index.html">Home</a></li>
                                         <li><a href="about.html">About Us</a></li>
-
                                         <li class="has-sub">
-                                            <a href="services.html">Services</a>
+                                            <a href="services.html">Services + </a>
                                             <ul>
-                                                <li><a href="single-service.html"> Root Canal</a></li>
-                                                <li><a href="single-service.html">Alignment Teeth</a></li>
-                                                <li><a href="single-service.html"> Cosmetic Teeth</a></li>
-                                                <li><a href="single-service.html">Oral Hygiene</a></li>
-                                                <li><a href="single-service.html">Live Advisory</a></li>
-                                                <li><a href="single-service.html">Cavity Inspection</a></li>
-                                                <li><a href="services.html">Services</a></li>
+												<li><a href="cosmetic_dentistry.html">Cosmetic Dentistry</a></li>
+												<li><a href="dental_xrays.html">Dental X-Rays</a></li>
+												<li><a href="root_canal_treatment.html">Root Canal Treatment</a></li>
+												<li><a href="teeth_whitening.html">Teeth Whitening</a></li>
+												<li><a href="dental_implants.html">Dental Implants</a></li>
+												<li><a href="braces_implants.html">Braces & Implants</a></li>
+												<li><a href="dental_bonding.html">Dental Bonding</a></li>
+												<li><a href="wisdom_tooth_extraction.html">Wisdom tooth Extraction</a></li>
+												<li><a href="oral_prophylaxis.html">Oral Prophylaxis</a></li>
+												<li><a href="pit_and_fissure_sealants.html">Pit and Fissure Sealants</a></li>
+												<li><a href="diastema_closure.html">Diastema Closure</a></li>
+												<li><a href="restorations.html">Restorations</a></li>
+												<li><a href="fluoride_treatment.html">Fluoride Treatment</a></li>
+												<li><a href="crowns_bridges.html">Crowns and Bridges</a></li>
+												<li><a href="pediatric_dentistry.html">Pediatric dentistry</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-sub"><a href="#">Pages</a>
-                                            <ul>
-                                                <li><a href="projects.html">Gallery</a></li>
-
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                                <li><a href="faq.html">Faq</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="team-single.html">Team Details</a></li>
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a>
-                                            </ul>
-                                            </li>
-                                            <li class="has-sub">
-                                                <a href="blog.html">Blog</a>
-                                                <ul>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-
-
-                                            <li><a href="contact.html">Contact</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -149,7 +237,7 @@
     <main>
 
         <!-- breadcrumb-area -->
-        <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/bg/bdrc-bg.png)">
+        <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/services6.jpg)">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-12 col-lg-12">
@@ -161,7 +249,7 @@
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -184,21 +272,21 @@
                         <div class="contact-info">
                             <div class="single-cta pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                                 <div class="f-cta-icon">
-                                    <i class="far fa-map"></i>
+                                    <i class=""><img src="img/map.png"  ></i>
                                 </div>
                                 <h5>Office Address</h5>
-                                <p>380 St Kilda Road, Melbourne <br> VIC 3004, Australia</p>
+                                <p> 174, Dakshindari Rd, Sreebhumi, <br>Kolkata - 700048</p>
                             </div>
                             <div class="single-cta pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                                 <div class="f-cta-icon">
-                                    <i class="far fa-clock"></i>
+                                    <i class=""><img src="img/clock.png"  ></i>
                                 </div>
-                                <h5>Working Hours</h5>
+                                <h5>Clinic Hours</h5>
                                 <p>Monday to Friday 09:00 to 18:30 <br> Saturday 15:30</p>
                             </div>
                             <div class="single-cta wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                                 <div class="f-cta-icon">
-                                    <i class="far fa-envelope-open"></i>
+                                    <i class=""><img src="img/envlp.png"  ></i>
                                 </div>
                                 <h5>Message Us</h5>
                                 <p> <a href="#">support@example.com</a><br><a href="#">info@example.com</a></p>
@@ -212,39 +300,7 @@
                                     Make Appointment
                                 </h2>
                             </div>
-                            <form action="mail.php" method="post" class="contact-form mt-30">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="contact-field p-relative c-name mb-20">
-                                            <input type="text" id="firstn" name="firstn" placeholder="First Name" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="contact-field p-relative c-subject mb-20">
-                                            <input type="text" id="email" name="email" placeholder="Eamil" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="contact-field p-relative c-subject mb-20">
-                                            <input type="text" id="phone" name="phone" placeholder="Phone No." required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="contact-field p-relative c-subject mb-20">
-                                            <input type="text" id="subject" name="subject" placeholder="Subject">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="contact-field p-relative c-message mb-30">
-                                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write comments"></textarea>
-                                        </div>
-                                        <div class="slider-btn">
-                                            <button class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><span>Submit Now</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-prlGM9RPJnt8Hab0no_V_563ZgCzmBPqCumu2PKpjDUvdA/viewform?embedded=true" width="640" height="823" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                         </div>
 
                     </div>
@@ -260,8 +316,7 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212867.83634504632!2d-112.24455686962897!3d33.52582710700138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b743829374b03%3A0xabaac255b1e43fbe!2sPlexus%20Worldwide!5e0!3m2!1sen!2sin!4v1618567685329!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Eternal Smile Dental clinic, 174, Dakshindari Rd, Sreebhumi, Lake Town, Kolkata, South Dumdum, West Bengal 700048&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">google map embed html</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
                     </div>
                 </div>
             </div>
@@ -271,7 +326,7 @@
     </main>
     <!-- main-area-end -->
     <!-- footer -->
-    <footer class="footer-bg footer-p pt-90" style="background: #00173c;">
+<footer class="footer-bg footer-p pt-90" style="background: #00173c;">
         <div class="footer-top pb-70">
             <div class="container">
                 <div class="row justify-content-between">
@@ -282,14 +337,10 @@
                                 <h2><img src="img/logo/f_logo.png" alt="logo"></h2>
                             </div>
                             <div class="footer-link">
-                                <p>Mauris non nisi semper, lacinia neque in, dapibus leo. Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.Quisque vitae metus.</p>
-                                <div class="f-contact">
-                                    <ul>
-                                        <li>
-                                            <i class="icon fal fa-clock"></i>
-                                            <span>Monday - Saturday:<br>9:00am - 10:00Pm</span>
-                                        </li>
-                                    </ul>
+                                <p>Eternal Smile Dental Clinic, true to its name, believes in retaining, upholding & embellishing your smiles. To us, keeping your teeth healthy & eternal is of paramount importance & we dedicate ourselves to that noble cause with fervent sincerity.</p>
+                                <p>We are an authentic multi-speciality dental clinic where doctors of all leading specialities of dentistry are available. </p>
+								<div class="f-contact">
+                                    
 
                                 </div>
 
@@ -301,33 +352,34 @@
                     <div class="col-xl-2 col-lg-2 col-sm-6">
                         <div class="footer-widget mb-30">
                             <div class="f-widget-title">
-                                <h2>Other Links</h2>
+                                <h2>Services</h2>
                             </div>
                             <div class="footer-link">
                                 <ul>
-                                    <li><a href="index.html"> Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="projects.html"> Project</a></li>
-                                    <li><a href="team.html">Our Team</a></li>
-                                    <li><a href="blog.html">Latest Blog</a></li>
+                                    <li><a href="cosmetic_dentistry.html">Cosmetic Dentistry</a></li>
+												<li><a href="dental_xrays.html">Dental X-Rays</a></li>
+												<li><a href="root_canal_treatment.html">Root Canal Treatment</a></li>
+												<li><a href="teeth_whitening.html">Teeth Whitening</a></li>
+												<li><a href="dental_implants.html">Dental Implants</a></li>
+												<li><a href="braces_implants.html">Braces & Implants</a></li>
+												<li><a href="dental_bonding.html">Dental Bonding</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-sm-6">
                         <div class="footer-widget mb-30">
-                            <div class="f-widget-title">
-                                <h2>Our Services</h2>
-                            </div>
+                            
                             <div class="footer-link">
                                 <ul>
-                                    <li><a href="#"> Root Canal</a></li>
-                                    <li><a href="#">Alignment Teeth</a></li>
-                                    <li><a href="#"> Cosmetic Teeth</a></li>
-                                    <li><a href="#">Oral Hygiene</a></li>
-                                    <li><a href="#">Live Advisory</a></li>
-                                    <li><a href="#">Cavity Inspection</a></li>
+                                    <li><a href="wisdom_tooth_extraction.html">Wisdom tooth Extraction</a></li>
+												<li><a href="oral_prophylaxis.html">Oral Prophylaxis</a></li>
+												<li><a href="pit_and_fissure_sealants.html">Pit and Fissure </a></li>
+												<li><a href="diastema_closure.html">Diastema Closure</a></li>
+												<li><a href="restorations.html">Restorations</a></li>
+												<li><a href="fluoride_treatment.html">Fluoride Treatment</a></li>
+												<li><a href="crowns_bridges.html">Crowns and Bridges</a></li>
+												<li><a href="pediatric_dentistry.html">Pediatric dentistry</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -340,14 +392,14 @@
                             <div class="f-contact">
                                 <ul>
                                     <li>
-                                        <i class="icon fal fa-map-marker-check"></i>
-                                        <span>1247/Plot No. 39, 15th Phase,<br> LHB Colony, Kanpur</span>
+                                        <i class=""><img src="img/map.png" width="70%" ></i>
+                                        <span> &nbsp;&nbsp;&nbsp;174, Dakshindari Rd, <br>&nbsp;&nbsp;&nbsp;Kolkata - 700048</span>
                                     </li>
                                     <li>
-                                        <i class="icon fal fa-phone"></i>
-                                        <span>1800-121-3637<br>+91-7052-101-786</span>
+                                        <i class=""><img src="img/clock.png" width="50%"  ></i>
+                                        <span>&nbsp;&nbsp;&nbsp;Monday to Friday: <br> &nbsp;&nbsp;&nbsp;09:00 to 18:30 </span>
                                     </li>
-                                    <li><i class="icon fal fa-envelope"></i>
+                                    <li><i class="icon "><img src="img/envlp.png" width="50%"  ></i>
                                         <span>
                                                 <a href="mailto:info@example.com">info@example.com</a>
                                            <br>
@@ -367,22 +419,11 @@
         <div class="copyright-wrap">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4">
                         <div class="copy-text">
-                            Copyright &copy; 2022 decare. All rights reserved.
+                            <center>Copyright &copy; 2025 Eternal Smile Dental clinic. All rights reserved.</center>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-
-
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="footer-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
+                   
+                    
                 </div>
             </div>
         </div>
@@ -403,7 +444,6 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.meanmenu.min.js"></script>
     <script src="js/parallax-scroll.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>

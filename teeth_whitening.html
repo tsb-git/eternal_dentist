@@ -22,9 +22,118 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Base */
+.btn-floating:hover img {
+  margin-bottom: -3px
+}
+
+.btn-floating {
+    position: fixed;
+    left: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+
+.btn-floating1 {
+    position: fixed;
+    right: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+
+.btn-floating:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.btn-floating1:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn-floating span {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+
+.btn-floating:hover span {
+    display: inline-block;
+}
+.btn-floating1 span {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+
+.btn-floating1:hover span {
+    display: inline-block;
+}
+
+
+/* Phone */
+.btn-floating.phone {
+    bottom: 25px;
+    background-color: #760f10;
+}
+
+.btn-floating.phone:hover {
+    background-color: #c03421;
+}
+
+/* WhatsApp */
+.btn-floating1.whatsapp {
+    background-color: #34af23;
+    bottom: 25px;
+}
+
+.btn-floating1.whatsapp:hover {
+    background-color: #1f7a12
+}
+</style>
+</head>
+<body>
+<a href="tel:+918697374363">
+  <button class="btn-floating phone">
+    <img src="https://i.imgur.com/FZuns9L.png" alt="Phone">
+    <span>+91 86973 - 74363</span>
+  </button>
+</a>
+
+<a href="https://wa.me/+918697374363" target="_blank">
+  <button class="btn-floating1 whatsapp">
+    <img src="https://i.imgur.com/LBW2Lso.png" alt="WhatsApp">
+    <span>+91 86973 - 74363</span>
+  </button>
+</a>
+</body>
+</html>
     <!-- header -->
     <header class="header-area header">
         <div class="header-top second-header d-none d-md-block">
@@ -34,11 +143,11 @@
                         <div class="header-cta">
                             <ul>
                                 <li>
-                                    <i class="icon fal fa-envelope"></i>
+                                    <img src="img/icon/env.png"  >
                                     <span>info@example.com</span>
                                 </li>
                                 <li>
-                                    <i class="icon fal fa-phone"></i>
+                                    <img src="img/icon/phone.png"  >
                                     <span>+91-7052-101-786</span>
                                 </li>
                             </ul>
@@ -46,11 +155,9 @@
                     </div>
                     <div class="col-lg-4 col-md-4 d-none d-lg-block text-right">
                         <div class="header-social">
-                            <span>
-                                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" title="LinkedIn"><i class="fab fa-instagram"></i></a>               
-                                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" title="Twitter"><i class="fab fa-youtube"></i></a>
+                             <span>
+                                    <img src="img/icon/clock.png" ><b>Monday - Saturday : 9:00am - 10:00pm</b>
+                                    
                                    </span>
                             <!--  /social media icon redux -->
                         </div>
@@ -74,50 +181,30 @@
                             <div class="main-menu text-right text-xl-right">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li class="has-sub">
-                                            <a href="index.html">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home Page 01</a></li>
-                                                <li><a href="index-2.html">Home Page 02</a></li>
-                                                <li><a href="index-3.html">Home Page 03</a></li>
-                                            </ul>
-                                        </li>
+										<li><a href="index.html">Home</a></li>
                                         <li><a href="about.html">About Us</a></li>
-
                                         <li class="has-sub">
-                                            <a href="services.html">Services</a>
+                                            <a href="services.html">Services + </a>
                                             <ul>
-                                                <li><a href="single-service.html"> Root Canal</a></li>
-                                                <li><a href="single-service.html">Alignment Teeth</a></li>
-                                                <li><a href="single-service.html"> Cosmetic Teeth</a></li>
-                                                <li><a href="single-service.html">Oral Hygiene</a></li>
-                                                <li><a href="single-service.html">Live Advisory</a></li>
-                                                <li><a href="single-service.html">Cavity Inspection</a></li>
-                                                <li><a href="services.html">Services</a></li>
+												<li><a href="cosmetic_dentistry.html">Cosmetic Dentistry</a></li>
+												<li><a href="dental_xrays.html">Dental X-Rays</a></li>
+												<li><a href="root_canal_treatment.html">Root Canal Treatment</a></li>
+												<li><a href="teeth_whitening.html">Teeth Whitening</a></li>
+												<li><a href="dental_implants.html">Dental Implants</a></li>
+												<li><a href="braces_implants.html">Braces & Implants</a></li>
+												<li><a href="dental_bonding.html">Dental Bonding</a></li>
+												<li><a href="wisdom_tooth_extraction.html">Wisdom tooth Extraction</a></li>
+												<li><a href="oral_prophylaxis.html">Oral Prophylaxis</a></li>
+												<li><a href="pit_and_fissure_sealants.html">Pit and Fissure Sealants</a></li>
+												<li><a href="diastema_closure.html">Diastema Closure</a></li>
+												<li><a href="restorations.html">Restorations</a></li>
+												<li><a href="fluoride_treatment.html">Fluoride Treatment</a></li>
+												<li><a href="crowns_bridges.html">Crowns and Bridges</a></li>
+												<li><a href="pediatric_dentistry.html">Pediatric dentistry</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-sub"><a href="#">Pages</a>
-                                            <ul>
-                                                <li><a href="projects.html">Gallery</a></li>
-
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                                <li><a href="faq.html">Faq</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="team-single.html">Team Details</a></li>
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a>
-                                            </ul>
-                                            </li>
-                                            <li class="has-sub">
-                                                <a href="blog.html">Blog</a>
-                                                <ul>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-
-
-                                            <li><a href="contact.html">Contact</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -148,20 +235,36 @@
     <!-- main-area -->
     <main>
 
+        <!-- search-popup -->
+        <div class="modal fade bs-example-modal-lg search-bg popup1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content search-popup">
+                    <div class="text-center">
+                        <a href="#" class="close2" data-dismiss="modal" aria-label="Close">× close</a>
+                    </div>
+                    <div class="row search-outer">
+                        <div class="col-md-11"><input type="text" placeholder="Search for products..." /></div>
+                        <div class="col-md-1 text-right"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /search-popup -->
         <!-- breadcrumb-area -->
-        <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/bg/bdrc-bg.png)">
+        <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/services4.jpg);">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-12 col-lg-12">
                         <div class="breadcrumb-wrap text-left">
                             <div class="breadcrumb-title">
-                                <h2>Gallery</h2>
+                                <h2>Teeth Whitening</h2>
                                 <div class="breadcrumb-wrap">
 
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page">Gallery </li>
+											<li class="breadcrumb-item"><a href="#">Services</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Teeth Whitening</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -173,76 +276,136 @@
             </div>
         </section>
         <!-- breadcrumb-area-end -->
-        <!-- gallery-area -->
-        <section id="work" class="pt-105 pb-95">
-            <div class="container-fluid">
+        <!-- inner-blog -->
+        <section class="inner-blog pt-120 pb-120">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="masonry-gallery-huge">
-                            <div class="grid col2">
+                    <div class="col-lg-8">
+                        <div class="bsingle__post mb-50">
+                            <div class="bsingle__post-thumb">
+                                <img src="img/teeth.jpg" alt="">
+                            </div>
+                            
+                        </div>
+						<div class="service-detail">
 
 
-                                <div class="grid-item hover-zoomin banking">
-                                    <a class="popup-image" href="img/gallery/protfolio-img02.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img02.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
+                            <div class="content-box">
+                                <h2>Teeth Whitening Process Steps</h2>
+                                <p style="color:black;">
+									<b>1. Consultation:</b>  Dentist checks teeth and discusses options.<br>
+									<b>2. Cleaning:</b>  Removes plaque and tartar for best results.<br>
+									<b>3. Preparation:</b>  Apply protective gel on gums (if needed).<br>
+									<b>4. Whitening:</b>  Apply whitening gel or use laser/LED light.<br>
+									<b>5. Rinse & Evaluate:</b>  Check results and repeat if needed.<br>
+									<b>6. Post-care:</b>  Avoid staining foods/drinks for 24-48 hours.<br>
+								</p>
 
+                                <!-- Two Column -->
+                                
 
+                                <h3>Why Whiten Teeth?</h3>
+
+                                <ul style="color:black;">
+									<li>Boost confidence with a brighter smile</li>
+									<li>Remove stains from coffee, tea, or tobacco.</li>
+									<li>Enhance overall appearance.</li>
+								</ul>
+								<br><br>
+
+                                <!--Product Info Tabs-->
+                                <div class="product-info-tabs">
+                                    <!--Product Tabs-->
+                                    <div class="prod-tabs tabs-box">
+                                        <!--Tab Btns-->
+                                        <ul class="tab-btns tab-buttons clearfix">
+                                            <li data-tab="#prod-details" class="tab-btn active-btn">Types</li>
+                                            <li data-tab="#prod-spec" class="tab-btn">Benefits</li>
+                                            <li data-tab="#prod-reviews" class="tab-btn">Considerations</li>
+                                        </ul>
+
+                                        <!--Tabs Container-->
+                                        <div class="tabs-content">
+
+                                            <!--Tab / Active Tab-->
+                                            <div class="tab active-tab" id="prod-details">
+                                                <div class="content">
+                                                    <p style="color:black;">
+													<b>1. In-office Whitening:</b> Fast, dramatic results (1-2 hours).<br>
+													<b>2. At-home Kits:</b> Custom trays with whitening gel.<br>
+													<b>3. Whitening Toothpaste:</b> Gradual, mild whitening.<br>
+													</p>
+                                                </div>
+                                            </div>
+
+                                            <!--Tab -->
+                                            <div class="tab" id="prod-spec">
+                                                <div class="content">
+                                                    <p style="color:black;">
+													   Quick, non-invasive.<br>
+													   Customizable options.<br>
+													   Boosts self-esteem.<br>
+													</p>
+                                                </div>
+                                            </div>
+
+                                            <!--Tab-->
+                                            <div class="tab" id="prod-reviews">
+                                                <div class="content">
+                                                    <p style="color:black;">
+													Sensitivity may occur.<br>
+													Results vary based on tooth condition.<br>
+													Maintain with good oral hygiene.<br>
+
+													</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="grid-item hover-zoomin financial">
-                                    <a class="popup-image" href="img/gallery/protfolio-img03.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img03.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
 
-                                </div>
-                                <div class="grid-item hover-zoomin financial">
-                                    <a class="popup-image" href="img/gallery/protfolio-img01.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img01.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-
-                                </div>
-                                <div class="grid-item hover-zoomin insurance">
-                                    <a class="popup-image" href="img/gallery/protfolio-img06.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img06.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="grid-item hover-zoomin banking insurance">
-                                    <a class="popup-image" href="img/gallery/protfolio-img04.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img04.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="grid-item hover-zoomin financial">
-                                    <a class="popup-image" href="img/gallery/protfolio-img05.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img05.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-
-                                </div>
 
 
                             </div>
                         </div>
-
+                        
+                       
                     </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <aside class="sidebar-widget">
+                            
+                            
+                            <section id="categories-1" class="widget widget_categories">
+                                <h2 class="widget-title">Other Services</h2>
+                                <ul>
+									<li class="cat-item cat-item-23"><a href="cosmetic_dentistry.html"><h6>Cosmetic Dentistry</h6></li>
+									<li class="cat-item cat-item-23"><a href="dental_xrays.html"><h6>Dental X-Rays</h6></li>
+									<li class="cat-item cat-item-23"><a href="root_canal_treatment.html"><h6>Root Canal Treatment</h6></li>
+									<li class="cat-item cat-item-23"><a href="dental_implants.html"><h6>Dental Implants</h6></li>
+									<li class="cat-item cat-item-23"><a href="braces_implants.html"><h6>Braces & Implants</h6></li>
+									<li class="cat-item cat-item-23"><a href="dental_bonding.html"><h6>Dental Bonding</h6></li>
+									<li class="cat-item cat-item-23"><a href="wisdom_tooth_extraction.html"><h6>Wisdom tooth Extraction</h6></li>
+									<li class="cat-item cat-item-23"><a href="oral_prophylaxis.html"><h6>Oral Prophylaxis</h6></li>
+									<li class="cat-item cat-item-23"><a href="pit_and_fissure_sealants.html"><h6>Pit and Fissure Sealants</h6></li>
+									<li class="cat-item cat-item-23"><a href="diastema_closure.html"><h6>Diastema Closure</h6></li>
+									<li class="cat-item cat-item-23"><a href="restorations.html"><h6>Restorations</h6></li>
+									<li class="cat-item cat-item-23"><a href="fluoride_treatment.html"><h6>Fluoride Treatment</h6></li>
+									<li class="cat-item cat-item-23"><a href="crowns_bridges.html"><h6>Crowns and Bridges</h6></li>
+									<li class="cat-item cat-item-23"><a href="pediatric_dentistry.html"><h6>Pediatric dentistry</h6></li>
 
+                                </ul>
+                            </section>
+                            
+                            <div class="service-detail-contact wow fadeup-animation" data-wow-delay="1.1s">
+                                <h3 class="h3-title">If You Need Any Help Contact With Us</h3>
+                                <a href="tel:+918697374363" title="Call now">+91 86973 74363</a>
+                            </div>
+                        </aside>
+                    </div>
                 </div>
-
             </div>
         </section>
-        <!-- gallery-area-end -->
-
-
+        <!-- inner-blog-end -->
     </main>
     <!-- main-area-end -->
     <!-- footer -->
@@ -378,7 +541,6 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.meanmenu.min.js"></script>
     <script src="js/parallax-scroll.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
