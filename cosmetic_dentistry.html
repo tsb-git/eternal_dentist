@@ -320,56 +320,124 @@
 									<li><b>Invisalign:</b> Clear aligners for straighter teeth.</li>
 								</ul>
 								<br><br>
+								<!DOCTYPE html>
+								<html>
+								<head>
+								<style>
+								.faq-container {
+									max-width: 800px;
+									margin: 50px auto 0;
+									padding: 20px;
+									flex: 1;
+								}
+								.accordion-button {
+									background-color: #ffffff;
+									color: #333;
+									border: none;
+									box-shadow: 0 2px 5px rgba(0,0,0,0.0);
+									transition: all 0.3s ease;
+								}
+								.accordion-button:not(.collapsed) {
+									background-color: #05499b;
+									color: white;
+								}
+								.accordion-button:focus {
+									box-shadow: 0 0 0 0.2rem rgba(35, 34, 138, 0.25);
+								}
+								.accordion-body {
+									background-color: #f8f9fa;
+									border-left: 4px solid #05499b;
+									animation: slideDown 0.3s ease-out;
+								}
+								@keyframes slideDown {
+									from {
+										opacity: 0;
+										transform: translateY(-10px);
+									}
+									to {
+										opacity: 1;
+										transform: translateY(0);
+									}
+								}
+								.faq-icon {
+									margin-right: 10px;
+									color: #edbe00;
+								}
 
-                                <!--Product Info Tabs-->
-                                <div class="product-info-tabs">
-                                    <!--Product Tabs-->
-                                    <div class="prod-tabs tabs-box">
-                                        <!--Tab Btns-->
-                                        <ul class="tab-btns tab-buttons clearfix">
-                                            <li data-tab="#prod-details" class="tab-btn active-btn">Benefits</li>
-                                            <li data-tab="#prod-spec" class="tab-btn">Who's it for?</li>
-                                            <li data-tab="#prod-reviews" class="tab-btn">Why Choose Us?</li>
-                                        </ul>
+								.accordion-item {
+									margin-bottom: 10px;
+									border-radius: 8px;
+									overflow: hidden;
+								}
+								</style>
+								</head>
+								<body>
 
-                                        <!--Tabs Container-->
-                                        <div class="tabs-content">
-
-                                            <!--Tab / Active Tab-->
-                                            <div class="tab active-tab" id="prod-details">
-                                                <div class="content">
-                                                    <p style="color:black;">
-													   1. Boosts confidence with a brighter, aligned smile.<br>
-													   2. Improves overall facial appearance.<br>
-													   3. Quick, minimally invasive procedures.<br>
-													</p>
-                                                </div>
-                                            </div>
-
-                                            <!--Tab -->
-                                            <div class="tab" id="prod-spec">
-                                                <div class="content">
-                                                    <p style="color:black;">
+								<head>
+								<meta charset="UTF-8">
+								<meta name="viewport" content="width=device-width, initial-scale=1.0">
+								<!-- Bootstrap 5 CSS -->
+								<!-- Custom CSS -->
+								</head>
+								<body>
+									<div class="container faq-container">
+										<div class="accordion" id="faqAccordion">
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+														Benefits
+													</button>
+												</h2>
+												<div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+													<div class="accordion-body">
+														<p style="color:black;">
+															1. Boosts confidence with a brighter, aligned smile.<br>
+														   2. Improves overall facial appearance.<br>
+														   3. Quick, minimally invasive procedures.<br>												
+														</p>                    
+													</div>
+												</div>
+											</div>
+											
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+														Who's it for?                    
+													</button>
+												</h2>
+												<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+													<div class="accordion-body">
+														<p style="color:black;">
 													   1. Those with discolored, chipped, or misaligned teeth.<br>
 													   2. Anyone wanting to enhance their smile.<br>
-													</p>
-                                                </div>
-                                            </div>
-
-                                            <!--Tab-->
-                                            <div class="tab" id="prod-reviews">
-                                                <div class="content">
-                                                    <p style="color:black;">
+													</p>              
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+														Why Choose Us?                    
+													</button>
+												</h2>
+												<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+													<div class="accordion-body">
+														<p style="color:black;">
 													   1. Experienced dentists<br>
 													   2. State-of-the-art technology<br>
 													   3. Personalized care<br>
 													   4. Comfort-focused approach<br>
-													</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+													</p>               
+													</div>
+												</div>       	
+											</div>
+										</div>
+									</div> 
+								</body>
+							</html>
+
+                                <!--Product Info Tabs-->
+                                
 
 
 

@@ -314,25 +314,77 @@
 									
 								</ul>
 								<br><br>
+								<!DOCTYPE html>
+								<html>
+								<head>
+								<style>
+								.faq-container {
+									max-width: 800px;
+									margin: 50px auto 0;
+									padding: 20px;
+									flex: 1;
+								}
+								.accordion-button {
+									background-color: #ffffff;
+									color: #333;
+									border: none;
+									box-shadow: 0 2px 5px rgba(0,0,0,0.0);
+									transition: all 0.3s ease;
+								}
+								.accordion-button:not(.collapsed) {
+									background-color: #05499b;
+									color: white;
+								}
+								.accordion-button:focus {
+									box-shadow: 0 0 0 0.2rem rgba(35, 34, 138, 0.25);
+								}
+								.accordion-body {
+									background-color: #f8f9fa;
+									border-left: 4px solid #05499b;
+									animation: slideDown 0.3s ease-out;
+								}
+								@keyframes slideDown {
+									from {
+										opacity: 0;
+										transform: translateY(-10px);
+									}
+									to {
+										opacity: 1;
+										transform: translateY(0);
+									}
+								}
+								.faq-icon {
+									margin-right: 10px;
+									color: #edbe00;
+								}
 
-                                <!--Product Info Tabs-->
-                                <div class="product-info-tabs">
-                                    <!--Product Tabs-->
-                                    <div class="prod-tabs tabs-box">
-                                        <!--Tab Btns-->
-                                        <ul class="tab-btns tab-buttons clearfix">
-                                            <li data-tab="#prod-details" class="tab-btn active-btn">Process</li>
-                                            <li data-tab="#prod-spec" class="tab-btn">Benefits</li>
-                                            <li data-tab="#prod-reviews" class="tab-btn">Frequency</li>
-                                        </ul>
+								.accordion-item {
+									margin-bottom: 10px;
+									border-radius: 8px;
+									overflow: hidden;
+								}
+								</style>
+								</head>
+								<body>
 
-                                        <!--Tabs Container-->
-                                        <div class="tabs-content">
-
-                                            <!--Tab / Active Tab-->
-                                            <div class="tab active-tab" id="prod-details">
-                                                <div class="content">
-                                                    <p style="color:black;">
+								<head>
+								<meta charset="UTF-8">
+								<meta name="viewport" content="width=device-width, initial-scale=1.0">
+								<!-- Bootstrap 5 CSS -->
+								<!-- Custom CSS -->
+								</head>
+								<body>
+									<div class="container faq-container">
+										<div class="accordion" id="faqAccordion">
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+														Process
+													</button>
+												</h2>
+												<div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+													<div class="accordion-body">
+														<p style="color:black;">
 													<b>1. Examination:</b> Check gums and teeth.<br>
 													<b>2. Scaling:</b> Remove plaque and tartar.<br>
 													<b>3. Root Planing:</b> Smooth roots.<br>
@@ -341,33 +393,49 @@
 													
 
 													</p>
-                                                </div>
-                                            </div>
-
-                                            <!--Tab -->
-                                            <div class="tab" id="prod-spec">
-                                                <div class="content">
-                                                    <p style="color:black;">
+													</div>
+												</div>
+											</div>
+											
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+														Benefits                  
+													</button>
+												</h2>
+												<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+													<div class="accordion-body">
+														<p style="color:black;">
 													  1. Healthy gums and teeth.<br>
 														2. Prevents bad breath.<br>
 														3. Early detection of issues.<br>
-													</p>
-                                                </div>
-                                            </div>
-
-                                            <!--Tab-->
-                                            <div class="tab" id="prod-reviews">
-                                                <div class="content">
-                                                    <p style="color:black;">
+													</p>          
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+														Frequency                    
+													</button>
+												</h2>
+												<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+													<div class="accordion-body">
+														<p style="color:black;">
 															1. Every 6 months typically.<br>
 															2. More often if prone to issues.
 
-													</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+													</p>         
+													</div>
+												</div>       	
+											</div>
+										</div>
+									</div> 
+								</body>
+							</html>
+
+                                <!--Product Info Tabs-->
+                                
 
 
 
@@ -425,14 +493,10 @@
                                 <h2><img src="img/logo/f_logo.png" alt="logo"></h2>
                             </div>
                             <div class="footer-link">
-                                <p>Mauris non nisi semper, lacinia neque in, dapibus leo. Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.Quisque vitae metus.</p>
-                                <div class="f-contact">
-                                    <ul>
-                                        <li>
-                                            <i class="icon fal fa-clock"></i>
-                                            <span>Monday - Saturday:<br>9:00am - 10:00Pm</span>
-                                        </li>
-                                    </ul>
+                                <p>Eternal Smile Dental Clinic, true to its name, believes in retaining, upholding & embellishing your smiles. To us, keeping your teeth healthy & eternal is of paramount importance & we dedicate ourselves to that noble cause with fervent sincerity.</p>
+                                <p>We are an authentic multi-speciality dental clinic where doctors of all leading specialities of dentistry are available. </p>
+								<div class="f-contact">
+                                    
 
                                 </div>
 
@@ -444,33 +508,34 @@
                     <div class="col-xl-2 col-lg-2 col-sm-6">
                         <div class="footer-widget mb-30">
                             <div class="f-widget-title">
-                                <h2>Other Links</h2>
+                                <h2>Services</h2>
                             </div>
                             <div class="footer-link">
                                 <ul>
-                                    <li><a href="index.html"> Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="projects.html"> Project</a></li>
-                                    <li><a href="team.html">Our Team</a></li>
-                                    <li><a href="blog.html">Latest Blog</a></li>
+                                    <li><a href="cosmetic_dentistry.html">Cosmetic Dentistry</a></li>
+												<li><a href="dental_xrays.html">Dental X-Rays</a></li>
+												<li><a href="root_canal_treatment.html">Root Canal Treatment</a></li>
+												<li><a href="teeth_whitening.html">Teeth Whitening</a></li>
+												<li><a href="dental_implants.html">Dental Implants</a></li>
+												<li><a href="braces_implants.html">Braces & Implants</a></li>
+												<li><a href="dental_bonding.html">Dental Bonding</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-sm-6">
                         <div class="footer-widget mb-30">
-                            <div class="f-widget-title">
-                                <h2>Our Services</h2>
-                            </div>
+                            
                             <div class="footer-link">
                                 <ul>
-                                    <li><a href="#"> Root Canal</a></li>
-                                    <li><a href="#">Alignment Teeth</a></li>
-                                    <li><a href="#"> Cosmetic Teeth</a></li>
-                                    <li><a href="#">Oral Hygiene</a></li>
-                                    <li><a href="#">Live Advisory</a></li>
-                                    <li><a href="#">Cavity Inspection</a></li>
+                                    <li><a href="wisdom_tooth_extraction.html">Wisdom tooth Extraction</a></li>
+												<li><a href="oral_prophylaxis.html">Oral Prophylaxis</a></li>
+												<li><a href="pit_and_fissure_sealants.html">Pit and Fissure </a></li>
+												<li><a href="diastema_closure.html">Diastema Closure</a></li>
+												<li><a href="restorations.html">Restorations</a></li>
+												<li><a href="fluoride_treatment.html">Fluoride Treatment</a></li>
+												<li><a href="crowns_bridges.html">Crowns and Bridges</a></li>
+												<li><a href="pediatric_dentistry.html">Pediatric dentistry</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -510,22 +575,11 @@
         <div class="copyright-wrap">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4">
                         <div class="copy-text">
-                            Copyright &copy; 2022 decare. All rights reserved.
+                            <center>Copyright &copy; 2025 Eternal Smile Dental clinic. All rights reserved.</center>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-
-
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="footer-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
+                   
+                    
                 </div>
             </div>
         </div>

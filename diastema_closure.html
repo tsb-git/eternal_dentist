@@ -311,62 +311,130 @@
 									<li>3. Prevent food trapping.</li>
 								</ul>
 								<br><br>
+								<!DOCTYPE html>
+								<html>
+								<head>
+								<style>
+								.faq-container {
+									max-width: 800px;
+									margin: 50px auto 0;
+									padding: 20px;
+									flex: 1;
+								}
+								.accordion-button {
+									background-color: #ffffff;
+									color: #333;
+									border: none;
+									box-shadow: 0 2px 5px rgba(0,0,0,0.0);
+									transition: all 0.3s ease;
+								}
+								.accordion-button:not(.collapsed) {
+									background-color: #05499b;
+									color: white;
+								}
+								.accordion-button:focus {
+									box-shadow: 0 0 0 0.2rem rgba(35, 34, 138, 0.25);
+								}
+								.accordion-body {
+									background-color: #f8f9fa;
+									border-left: 4px solid #05499b;
+									animation: slideDown 0.3s ease-out;
+								}
+								@keyframes slideDown {
+									from {
+										opacity: 0;
+										transform: translateY(-10px);
+									}
+									to {
+										opacity: 1;
+										transform: translateY(0);
+									}
+								}
+								.faq-icon {
+									margin-right: 10px;
+									color: #edbe00;
+								}
 
-                                <!--Product Info Tabs-->
-                                <div class="product-info-tabs">
-                                    <!--Product Tabs-->
-                                    <div class="prod-tabs tabs-box">
-                                        <!--Tab Btns-->
-                                        <ul class="tab-btns tab-buttons clearfix">
-                                            <li data-tab="#prod-details" class="tab-btn active-btn">Methods</li>
-                                            <li data-tab="#prod-spec" class="tab-btn">Process (Bonding)</li>
-                                            <li data-tab="#prod-reviews" class="tab-btn">Considerations</li>
-                                        </ul>
+								.accordion-item {
+									margin-bottom: 10px;
+									border-radius: 8px;
+									overflow: hidden;
+								}
+								</style>
+								</head>
+								<body>
 
-                                        <!--Tabs Container-->
-                                        <div class="tabs-content">
-
-                                            <!--Tab / Active Tab-->
-                                            <div class="tab active-tab" id="prod-details">
-                                                <div class="content">
-                                                    <p style="color:black;">
+								<head>
+								<meta charset="UTF-8">
+								<meta name="viewport" content="width=device-width, initial-scale=1.0">
+								<!-- Bootstrap 5 CSS -->
+								<!-- Custom CSS -->
+								</head>
+								<body>
+									<div class="container faq-container">
+										<div class="accordion" id="faqAccordion">
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+														Methods
+													</button>
+												</h2>
+												<div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+													<div class="accordion-body">
+														<p style="color:black;">
 														<b>1. Composite Bonding:</b> Quick fix with resin.<br>
 														<b>2. Braces:</b> For alignment issues.<br>
 														<b>3. Veneers:</b> Aesthetic cover-up.<br>
 														<b>4. Orthodontics:</b> Move teeth together.<br>
 
 													</p>
-                                                </div>
-                                            </div>
-
-                                            <!--Tab -->
-                                            <div class="tab" id="prod-spec">
-                                                <div class="content">
-                                                    <p style="color:black;">
+													</div>
+												</div>
+											</div>
+											
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+														Process (Bonding)                  
+													</button>
+												</h2>
+												<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+													<div class="accordion-body">
+														<p style="color:black;">
 														<b>1. Tooth prep:</b> Clean and etch.<br>
 														<b>2. Apply resin:</b> Close gap.<br>
 														<b>3. Cure and shape:</b> Match tooth.<br>
 														<b>4. Polish:</b> Smooth finish.<br>
 
-													</p>
-                                                </div>
-                                            </div>
-
-                                            <!--Tab-->
-                                            <div class="tab" id="prod-reviews">
-                                                <div class="content">
-                                                    <p style="color:black;">
+													</p>         
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+														Considerations                    
+													</button>
+												</h2>
+												<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+													<div class="accordion-body">
+														<p style="color:black;">
 															1. Aesthetic results.<br>
 															2. <b>Durability:</b> Bonding lasts 5-7 years.<br>
 															3. Oral hygiene maintains results.<br>
 														
 
-													</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+													</p>          
+													</div>
+												</div>       	
+											</div>
+										</div>
+									</div> 
+								</body>
+							</html>
+
+                                <!--Product Info Tabs-->
+                                
 
 
 
